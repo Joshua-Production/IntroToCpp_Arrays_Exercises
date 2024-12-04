@@ -29,8 +29,12 @@ int main(int argc, char** argv)
 
 int MinValue(const int* arr, int count)
 {
-	// TODO: loop through the array, return the smallest value
 	
+	// TODO: loop through the array, return the smallest value
+	for (int i = 0; i < count; i++)
+	{
+		
+	}
 	return 0;
 }
 
