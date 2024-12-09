@@ -68,10 +68,14 @@ int CountOccurrencesOfValue(const int* arr, int count, int search)
 
 	
 	int countOccurrences = 0;
+
+	// Loop through from 0 to count -1
 	for (int i = 0; i < count; i++)
 	{
+		// If the current element matches the search value
 		if (arr[i] == search) 
 		{
+			// Increse the occurrence count
 			countOccurrences++;
 		}
 	}

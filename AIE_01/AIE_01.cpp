@@ -13,8 +13,11 @@ int main(int argc, char** argv)
 	*/
 	// Task1: Write your Code here
 	// ------------------------------------------------------------------------
+
+	// Loop through 
 	for (int i = 0; i < NUM_NUMBERS; i++)
 	{
+		// Print the number at "i" in the "numbers" array
 		std::cout << numbers[i] << std::endl;
 	}
 	std::cout << "" << std::endl;
@@ -29,8 +32,10 @@ int main(int argc, char** argv)
 
 	// Task 2: Write your Code here
 	// ------------------------------------------------------------------------
+	// Loop through "numbers" in reverse order
 	for (int i = NUM_NUMBERS -1; i >= 0; i--)
 	{
+		// Print the number at "i" in the "numbers" array
 		std::cout << numbers[i] << std::endl;
 	}
 
