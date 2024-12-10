@@ -38,6 +38,9 @@ void Application::Load()
 	
 	// write your code here
 
+	for (int i = 0; i < ROWS * COLS; i++)
+		m_tiles[i] = rand() % 5;
+		
 	// -----------------------------------------------------
 }
 

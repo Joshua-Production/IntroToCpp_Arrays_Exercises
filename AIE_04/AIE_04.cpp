@@ -37,4 +37,25 @@ void SortArray(int* arr, int count)
 	// TODO: 
 	// modify the values in the array so that when this method returns
 	// all values are sorted in ascending order
+
+
+	// The reason you add -1 to each value if because arrays always start at 0 
+	// i is just to increase 
+	for (int i = 0; i < count -1; i++)
+	{
+		for (int j = 0; j < count - i - 1; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				// make a temp variable thats equal to one of the values
+				int tempj = arr[j];
+
+				// make arr[j] = to the other value
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tempj;
+
+			}
+		}
+	}
+
 }
