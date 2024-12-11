@@ -84,11 +84,30 @@ void Application::Draw()
 	// 	   We have created a helper function you can use "GetTileColor"
 	// --------------------------------------------------------------------
 	// write your code here
-	float xPos = 0;
-	float yPos = 0;
-	Color color = GetTileColor(1); // pass in the tilevalue
 
-	DrawRectangle(xPos, yPos, m_tileWidth, m_tileHeight, color);
+	// Initialized and defined index so we have a variable that holds our value
+	int index = 0;
+
+	// nested loop
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++) 
+		{
+			// while looping iterate over each time it loops
+			index++;
+			float xPos = (i* m_tileWidth);
+			float yPos = (j* m_tileHeight);
+			// Calculate the x and y position for the current tile
+			
+			Color color = GetTileColor(m_tiles[index]); // pass in the tilevalue
+
+			DrawRectangle(xPos, yPos, m_tileWidth, m_tileHeight, color);
+			
+		}
+	}
+	
+
+	
 
 	// --------------------------------------------------------------------
 
