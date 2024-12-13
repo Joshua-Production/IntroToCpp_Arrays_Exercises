@@ -55,13 +55,19 @@ void Application::Update(float deltaTime)
 	{
 		Vector2 mousePos = GetMousePosition();
 
+		
+
 		// Task 3:
 		// TODO: Calculate row and col index based on the mouse positon
-		int rowIndex = 0; 
-		int colIndex = 0;
-
+		
+		// divide the mouse positions by the width and the hight
+		int rowIndex = (mousePos.x /m_tileWidth);
+		int colIndex = (mousePos.y /m_tileHeight);
+		
 		// TODO: calculate the index of the tile clicked on based on the row/col index
-		int tileIndex = 0;
+
+		// using this formula index = rowId * COLS + colId
+		int tileIndex = rowIndex * COLS + colIndex;
 
 		m_tiles[tileIndex] += 1;
 		if (m_tiles[tileIndex] >= 5)
