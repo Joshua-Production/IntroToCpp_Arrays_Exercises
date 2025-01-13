@@ -61,8 +61,8 @@ void Application::Update(float deltaTime)
 		// TODO: Calculate row and col index based on the mouse positon
 		
 		// divide the mouse positions by the width and the hight
-		int rowIndex = (mousePos.x /m_tileWidth);
-		int colIndex = (mousePos.y /m_tileHeight);
+		int rowIndex = (mousePos.x /m_tileWidth );
+		int colIndex = (mousePos.y /m_tileHeight + 1);
 		
 		// TODO: calculate the index of the tile clicked on based on the row/col index
 
